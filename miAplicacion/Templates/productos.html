@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Carros Disponibles</h1>
+    <ul>
+        {% for x in misProductos %}
+        <li>{{x.codigoProducto }} - {{ x.descripcionProducto }}</li>
+        {% endfor %}
+    </ul>
+    <hr>
+    <p>Productos sujetos a disponibilidad al procesar el pedido.</p>
+</body>
+</html>
